@@ -1,5 +1,22 @@
-
 target/
 dbt_packages/
 logs/
+
+# Python
+*.pyc
+__pycache__/
+venv/
+.env
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Custom files
+TODO.md
+*.duckdb
 how-to-guide.md
