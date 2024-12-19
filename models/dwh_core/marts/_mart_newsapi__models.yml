@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: mart_newsapi__daily_news_feed
+    description: Denormalized daily news feed for consumption by news aggregation applications
+    columns:
+      - name: published_date
+        description: Publication date of the article
+        tests:
+          - not_null
+      - name: source_name
+        description: Name of the news source
+        tests:
+          - not_null
+      - name: title
+        description: Article title
+        tests:
+          - not_null
+
+  - name: mart_newsapi__source_analytics
+    description: Analytics metrics for news sources performance
+    columns:
+      - name: source_name
+        description: Name of the news source
+        tests:
+          - not_null
+      - name: image_coverage_pct
+        description: Percentage of articles with images
+      - name: rolling_7day_avg_articles
+        description: 7-day rolling average of article count 

@@ -6,7 +6,6 @@ logs/
 *.pyc
 __pycache__/
 venv/
-.env
 
 # IDE files
 .vscode/
@@ -17,6 +16,12 @@ venv/
 Thumbs.db
 
 # Custom files
-TODO.md
+ToDo.md
 *.duckdb
 how-to-guide.md
+logger.txt
+.secrets
+.dbt/
+scratch/
+custom-admin/
+.env
