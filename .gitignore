@@ -16,6 +16,7 @@ venv/
 Thumbs.db
 
 # Custom files
+ToDo.md
 *.duckdb
 how-to-guide.md
 logger.txt
