@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 dbt-core = "*"
+dbt-duckdb = "1.9.0"
 awswrangler = "*"
 seaborn = "*"
 s3fs = "*"

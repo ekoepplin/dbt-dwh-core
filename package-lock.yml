@@ -1,0 +1,16 @@
+packages:
+  - package: calogica/dbt_expectations
+    version: 0.8.5
+  - package: dbt-labs/dbt_utils
+    version: 1.3.0
+  - package: tnightengale/dbt_meta_testing
+    version: 0.3.6
+  - package: dbt-labs/codegen
+    version: 0.11.0
+  - package: dbt-labs/audit_helper
+    version: 0.11.0
+  - git: https://github.com/EqualExperts/dbt-unit-testing
+    revision: 5be2a9e75a9bf58c1113abb2187283fece805f0d
+  - package: calogica/dbt_date
+    version: 0.7.2
+sha1_hash: 319d050600e498bf8f34c673bfc32c74386cac3c
