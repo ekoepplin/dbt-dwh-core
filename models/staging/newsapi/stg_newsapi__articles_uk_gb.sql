@@ -1,4 +1,3 @@
-
 SELECT 
     source__name AS source_name,
     author,
@@ -8,9 +7,7 @@ SELECT
     url_to_image AS image_url,
     published_at,
     content,
-    'es' AS language_code,
+    'gb' AS language_code,
     _dlt_load_id,
     _dlt_id 
-FROM {{ ref('raw_newsapi__articles_es_es') }}
-
-  
+FROM {{ ref('src_newsapi__articles_uk_gb') }}

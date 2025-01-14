@@ -25,3 +25,4 @@ logger.txt
 scratch/
 custom-admin/
 .env
+dbt-certification-prep.qmd

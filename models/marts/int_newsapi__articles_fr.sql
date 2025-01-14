@@ -1,4 +1,4 @@
-WITH articles_uk AS (
+WITH articles_fr AS (
     SELECT 
         source__name AS source_name,
         author,
@@ -8,9 +8,9 @@ WITH articles_uk AS (
         url_to_image AS image_url,
         published_at,
         content,
-        'uk' AS source_country_code,
+        'fr' AS source_country_code,
         _dlt_load_id,
         _dlt_id
-    FROM {{ ref('raw_newsapi__articles_uk_gb') }}
+    FROM {{ ref('src_newsapi__articles_fr_fr') }}
 )
-SELECT * FROM articles_uk 
+SELECT * FROM articles_fr 

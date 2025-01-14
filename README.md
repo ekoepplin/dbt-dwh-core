@@ -21,8 +21,8 @@ pipenv install
 export AWS_ACCESS_KEY_ID=your_key
 export AWS_SECRET_ACCESS_KEY=your_secret
 # Only relevant for local development with duckdb
-export RAW_S3_PATH_INPUT_US_EN=your_s3_path
-export RAW_S3_PATH_INPUT_DE_DE=your_s3_path
+export src_S3_PATH_INPUT_US_EN=your_s3_path
+export src_S3_PATH_INPUT_DE_DE=your_s3_path
 # Additional language paths (FR, ES, IT, RU, GB)
 ```
 
@@ -52,7 +52,7 @@ export RAW_S3_PATH_INPUT_DE_DE=your_s3_path
 
 ## Data Models
 
-### Raw Layer (`raw_newsapi__articles_*`)
+### Raw Layer (`src_newsapi__articles_*`)
 Supported languages:
 - US English (us_en)
 - German (de_de)

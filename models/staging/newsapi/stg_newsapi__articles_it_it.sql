@@ -7,7 +7,8 @@ SELECT
     url_to_image AS image_url,
     published_at,
     content,
-    'gb' AS language_code,
+    'it' AS language_code,
     _dlt_load_id,
     _dlt_id 
-FROM {{ ref('raw_newsapi__articles_uk_gb') }}
+FROM {{ ref('src_newsapi__articles_it_it') }}
+  
