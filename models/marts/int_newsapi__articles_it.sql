@@ -11,6 +11,6 @@ WITH articles_it AS (
         'it' AS source_country_code,
         _dlt_load_id,
         _dlt_id
-    FROM {{ ref('raw_newsapi__articles_it_it') }}
+    FROM {{ ref('src_newsapi__articles_it_it') }}
 )
 SELECT * FROM articles_it 

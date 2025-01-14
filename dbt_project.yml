@@ -18,11 +18,10 @@ clean-targets:
 models:
   dwh_core:
     staging:
-      +materialized: view
-      +schema: staging
-    intermediate:
-      +materialized: table
-      +schema: intermediate
+      newsapi:
+        raw:
+          +materialized: view
+          +schema: staging
     marts:
       +materialized: table
       +schema: marts

@@ -10,5 +10,5 @@ SELECT
     'fr' AS language_code,
     _dlt_load_id,
     _dlt_id 
-FROM {{ ref('raw_newsapi__articles_fr_fr') }}
+FROM {{ ref('src_newsapi__articles_fr_fr') }}
   
